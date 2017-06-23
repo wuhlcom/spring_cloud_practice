@@ -14,8 +14,7 @@ public class ConsumerController {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public String hi() {
-        return restTemplate.getForEntity("http://SERVICE-HI/hi?name=whl", String.class).getBody();
+        return restTemplate.getForEntity("http://192.168.10.166:8762/hi?name=whl", String.class).getBody();
     }
-
 
 }
