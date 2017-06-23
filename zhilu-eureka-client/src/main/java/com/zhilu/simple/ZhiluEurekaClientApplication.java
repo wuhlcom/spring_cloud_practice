@@ -20,9 +20,10 @@ public class ZhiluEurekaClientApplication {
 //        return "Hello world";
 //     }
    
-     public static void main(String[] args) {
-		SpringApplication.run(ZhiluEurekaClientApplication.class, args);
+    public static void main(String[] args) {
+		   SpringApplication.run(ZhiluEurekaClientApplication.class, args);
     }  
+    
     @Value("${server.port}")
     String port;
     @RequestMapping("/hi")
